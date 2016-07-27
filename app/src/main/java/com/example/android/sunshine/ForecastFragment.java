@@ -102,6 +102,8 @@ public class ForecastFragment extends Fragment {
                 // http://openweathermap.org/API#forecast
                 String baseUrl = "http://api.openweathermap.org/data/2.5/forecast/city?id=6077243&mode=json&units=metric&cnt=7";
                 String apiKey = "&APPID=" + BuildConfig.OPEN_WEATHER_MAP_API_KEY;
+
+
                 URL url = new URL(baseUrl.concat(apiKey));
 
                 // Create the request to OpenWeatherMap, and open the connection
